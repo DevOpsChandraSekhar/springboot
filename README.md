@@ -23,8 +23,8 @@
   2. Spring  Initializer
   3. Spring Boot CLI
  
-#Springboot with jsp application
- Technologies used :
+# Springboot with jsp application
+  Technologies used :
 
   1. Spring Boot 2.4.1 RELEASE
   2. Spring 4.3.4.RELEASE
