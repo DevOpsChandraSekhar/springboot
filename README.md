@@ -1,12 +1,6 @@
 # springboot
 # Clone or Fork this entire repository into your lcoal machine/git
-* https://github.com/handsonexp/springboot.git 
-  (OR) 
-  git@github.com:handsonexp/springboot.git ssh 
-
-
-
-* git@github.com:handsonexp/springboot.git ssh
+  https://github.com/DevOpsChandraSekhar/springboot.git 
 
 # Eanbaling Eureka Server -Spring boot microservices
 
@@ -16,6 +10,37 @@
   
 2. Enable @EnableEurekaServer in main application 
 
+# Spring Boot Custom Banner 
+  This article shows you how to replace the default Spring’s banner below with your custom banner.
+  1. To add a custom banner in Spring Boot application, create a banner.txt file and put it into the resources folder.
+  
+  2. Review the content of banner.txt, this ASCII Art is created by this “ASCII Art Java example“, and the ANSI colors are added manually.
+  
+  3. Start Spring Boot app and see console ouput.
+
+
+# Spring Boot Jetty: Embedded Container 
+  By default, Spring Boot use Tomcat as the default embedded server, to change it to Jetty, just exclude Tomcat and include Jetty like this 
+  1. Exclude tomcat from *spring-boot-starter-web 
+  
+   <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <exclusions>
+            <exclusion>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-tomcat</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+  
+  2. Add the dependency Jetty
+     <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-jetty</artifactId>
+    </dependency>
+	
+  3. Run spring boot app that's it.
 
 # Creating simple springboot application
  *Mutiple ways to create Spring Boot Application
