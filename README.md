@@ -2,7 +2,7 @@
 # Clone or Fork this entire repository into your lcoal machine/git
   https://github.com/DevOpsChandraSekhar/springboot.git 
 
-# Eanbling Eureka Server -Spring boot microservices
+# Enabling Eureka Server -Spring boot microservices
 
 1. Modify application.properties file
   *spring.application.name=Eureka-Server 
